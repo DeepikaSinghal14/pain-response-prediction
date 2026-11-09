@@ -1,0 +1,53 @@
+{
+  "n_participants": 400,
+  "responder_rate": 0.477,
+  "stratification": {
+    "chosen_k": 2,
+    "silhouette_by_k": {
+      "2": 0.278,
+      "3": 0.186,
+      "4": 0.156,
+      "5": 0.126,
+      "6": 0.104
+    },
+    "adjusted_rand_vs_truth": 0.374,
+    "responder_rate_chi2_p": 0.0004561339265326777
+  },
+  "prediction": {
+    "logistic | Clinical": {
+      "auc_mean": 0.498,
+      "auc_sd": 0.072,
+      "brier": 0.254
+    },
+    "logistic | + Questionnaires": {
+      "auc_mean": 0.7,
+      "auc_sd": 0.041,
+      "brier": 0.222
+    },
+    "logistic | + QST": {
+      "auc_mean": 0.724,
+      "auc_sd": 0.039,
+      "brier": 0.214
+    },
+    "logistic | + Biomarkers (all)": {
+      "auc_mean": 0.743,
+      "auc_sd": 0.033,
+      "brier": 0.207
+    },
+    "gradient_boosting | all": {
+      "auc_mean": 0.735,
+      "auc_sd": 0.022,
+      "brier": 0.212
+    }
+  },
+  "top_features": {
+    "pcs": 0.0468,
+    "il6_log": 0.0349,
+    "dass_dep": 0.0151,
+    "psqi": 0.0073,
+    "ppt": 0.0059,
+    "pss10": 0.0036,
+    "cpt": 0.0036,
+    "cdt": 0.0026
+  }
+}

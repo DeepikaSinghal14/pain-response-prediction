@@ -1,0 +1,28 @@
+variable,modality,unit,description
+participant_id,id,-,Simulated participant identifier
+true_phenotype,ground_truth,category,Latent sensory phenotype used to simulate data (not a model input)
+age,clinical,years,Age at baseline
+sex_female,clinical,0/1,Sex (1 = female)
+bmi,clinical,kg/m2,Body-mass index
+cdt,qst,z-score,Cold detection threshold
+wdt,qst,z-score,Warm detection threshold
+cpt,qst,z-score,Cold pain threshold
+hpt,qst,z-score,Heat pain threshold
+mdt,qst,z-score,Mechanical detection threshold
+mps,qst,z-score,Mechanical pain sensitivity
+ppt,qst,z-score,Pressure pain threshold
+wur,qst,z-score,Wind-up ratio
+pain_nrs,questionnaire,0-10,Baseline average pain intensity (NRS)
+paindetect,questionnaire,0-38,painDETECT neuropathic component score
+dass_dep,questionnaire,0-42,DASS-21 depression subscale
+dass_anx,questionnaire,0-42,DASS-21 anxiety subscale
+dass_str,questionnaire,0-42,DASS-21 stress subscale
+pcs,questionnaire,0-52,Pain Catastrophizing Scale total
+psqi,questionnaire,0-21,Pittsburgh Sleep Quality Index global score
+pss10,questionnaire,0-40,Perceived Stress Scale (10 items)
+crp_log,biomarker,log mg/L,C-reactive protein
+il6_log,biomarker,log pg/mL,Interleukin-6
+tnfa_log,biomarker,log pg/mL,Tumour necrosis factor alpha
+pain_nrs_eot,outcome,0-10,End-of-treatment pain intensity (NRS)
+pain_reduction_pct,outcome,%,Relative pain reduction from baseline
+responder,outcome,0/1,Responder: >= 30 % pain reduction (IMMPACT)
